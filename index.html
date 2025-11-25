@@ -784,6 +784,171 @@
                     </ul>
                 </div>
 
+                <div class="chart-container" style="margin-top: 30px;">
+                    <h3 style="color: var(--brand-red); text-transform: uppercase; font-size: 1.8em; margin-bottom: 30px;">Organizational Chart</h3>
+                    <div style="padding: 40px; background: #f8f9fa; overflow-x: auto; min-height: 600px; position: relative;">
+
+                        <!-- Legend/Key in top-left corner -->
+                        <div style="position: absolute; top: 20px; left: 20px; background: white; padding: 10px 15px; border: 1px solid #ddd; border-radius: 8px;">
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <div style="width: 20px; height: 20px; background: var(--brand-blue); border: 2px solid #5a9cc5; border-radius: 4px;"></div>
+                                <span style="font-size: 0.85em; color: #666;">Executive Leadership Team</span>
+                            </div>
+                        </div>
+
+                        <!-- Susanna - Executive Director (Top of Hierarchy) -->
+                        <div style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
+                            <div style="display: inline-block; background: var(--brand-blue); padding: 20px 35px; border-radius: 10px; border: 2px solid #5a9cc5; position: relative;">
+                                <div style="color: var(--brand-red); font-weight: 600; font-size: 1.1em;">Susanna Kavanaugh</div>
+                                <div style="color: white; font-size: 0.85em; margin-top: 5px;">Executive Director &</div>
+                                <div style="color: white; font-size: 0.85em;">Co-Founder</div>
+                            </div>
+                        </div>
+
+                        <!-- Connector from Susanna to 3 departments -->
+                        <div style="position: relative; height: 40px; margin: 0 auto; max-width: 900px;">
+                            <div style="position: absolute; left: 50%; width: 2px; height: 20px; background: #333; transform: translateX(-50%);"></div>
+                            <div style="position: absolute; left: 16.66%; right: 16.66%; top: 20px; height: 2px; background: #333;"></div>
+                            <div style="position: absolute; left: 16.66%; width: 2px; height: 20px; background: #333; top: 20px;"></div>
+                            <div style="position: absolute; left: 50%; width: 2px; height: 20px; background: #333; top: 20px; transform: translateX(-50%);"></div>
+                            <div style="position: absolute; right: 16.66%; width: 2px; height: 20px; background: #333; top: 20px;"></div>
+                        </div>
+
+                        <!-- Three Main Departments -->
+                        <div style="display: flex; justify-content: center; gap: 80px; margin-top: 0; max-width: 1100px; margin-left: auto; margin-right: auto;">
+
+                            <!-- Selina's Department (Left) -->
+                            <div style="flex: 0 0 320px;">
+                                <!-- Selina Box -->
+                                <div style="background: var(--brand-blue); padding: 15px 20px; border-radius: 10px; border: 2px solid #5a9cc5; text-align: center; margin-bottom: 20px;">
+                                    <div style="color: var(--brand-red); font-weight: 600; font-size: 0.95em;">Selina Johnson</div>
+                                    <div style="color: white; font-size: 0.75em; margin-top: 3px;">Chief Programs and</div>
+                                    <div style="color: white; font-size: 0.75em;">Operations Officer</div>
+                                </div>
+
+                                <!-- Connector to Jessica and direct reports -->
+                                <div style="position: relative; height: 30px;">
+                                    <div style="position: absolute; left: 50%; width: 2px; height: 15px; background: #333; transform: translateX(-50%);"></div>
+                                    <div style="position: absolute; left: 20%; right: 20%; top: 15px; height: 2px; background: #333;"></div>
+                                </div>
+
+                                <!-- Two columns for Selina's reports -->
+                                <div style="display: flex; gap: 15px;">
+                                    <!-- Left column - Jessica and her team -->
+                                    <div style="flex: 1;">
+                                        <!-- Jessica Box -->
+                                        <div style="background: var(--brand-blue); padding: 12px; border-radius: 8px; border: 2px solid #5a9cc5; text-align: center; margin-bottom: 15px;">
+                                            <div style="color: var(--brand-red); font-weight: 600; font-size: 0.85em;">Jessica Rider</div>
+                                            <div style="color: white; font-size: 0.7em; margin-top: 2px;">Children's Programs</div>
+                                            <div style="color: white; font-size: 0.7em;">Director</div>
+                                        </div>
+
+                                        <!-- Jessica's team connector -->
+                                        <div style="position: relative; height: 20px;">
+                                            <div style="position: absolute; left: 50%; width: 2px; height: 10px; background: #333; transform: translateX(-50%);"></div>
+                                            <div style="position: absolute; left: 10%; right: 10%; top: 10px; height: 2px; background: #333;"></div>
+                                        </div>
+
+                                        <!-- Jessica's 4 reports in 2x2 grid -->
+                                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                                            <div style="background: white; padding: 8px; border: 2px dashed #999; border-radius: 6px; text-align: center;">
+                                                <div style="color: var(--brand-red); font-weight: 600; font-size: 0.7em;">Shonda Hibbs</div>
+                                                <div style="color: #666; font-size: 0.6em;">Programs Coordinator</div>
+                                            </div>
+                                            <div style="background: white; padding: 8px; border: 2px dashed #999; border-radius: 6px; text-align: center;">
+                                                <div style="color: var(--brand-red); font-weight: 600; font-size: 0.7em;">Ashley Wright</div>
+                                                <div style="color: #666; font-size: 0.6em;">Bag of Hope</div>
+                                                <div style="color: #666; font-size: 0.6em;">Coordinator</div>
+                                            </div>
+                                            <div style="background: white; padding: 8px; border: 2px dashed #999; border-radius: 6px; text-align: center;">
+                                                <div style="color: var(--brand-red); font-weight: 600; font-size: 0.7em;">Michele Lee</div>
+                                                <div style="color: #666; font-size: 0.6em;">Program Data</div>
+                                                <div style="color: #666; font-size: 0.6em;">Coordinator</div>
+                                            </div>
+                                            <div style="background: white; padding: 8px; border: 2px dashed #999; border-radius: 6px; text-align: center;">
+                                                <div style="color: var(--brand-red); font-weight: 600; font-size: 0.7em;">Lisa Taulman</div>
+                                                <div style="color: #666; font-size: 0.6em;">Bag of Hope</div>
+                                                <div style="color: #666; font-size: 0.6em;">Coordinator</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Right column - Other Selina reports -->
+                                    <div style="flex: 0 0 140px;">
+                                        <div style="background: white; padding: 10px; border: 2px dashed #999; border-radius: 6px; text-align: center; margin-bottom: 10px;">
+                                            <div style="color: var(--brand-red); font-weight: 600; font-size: 0.75em;">Katie Reed</div>
+                                            <div style="color: #666; font-size: 0.6em;">Event and Support</div>
+                                            <div style="color: #666; font-size: 0.6em;">Network Coordinator</div>
+                                        </div>
+                                        <div style="background: white; padding: 10px; border: 2px dashed #999; border-radius: 6px; text-align: center; margin-bottom: 10px;">
+                                            <div style="color: var(--brand-red); font-weight: 600; font-size: 0.75em;">Kaela Kranzler</div>
+                                            <div style="color: #666; font-size: 0.6em;">Office and Operations</div>
+                                            <div style="color: #666; font-size: 0.6em;">Coordinator</div>
+                                        </div>
+                                        <div style="background: white; padding: 10px; border: 2px dashed #999; border-radius: 6px; text-align: center;">
+                                            <div style="color: var(--brand-red); font-weight: 600; font-size: 0.75em;">Amber Cline</div>
+                                            <div style="color: #666; font-size: 0.6em;">Volunteer Coordinator</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Blake's Department (Center) -->
+                            <div style="flex: 0 0 200px;">
+                                <!-- Blake Box -->
+                                <div style="background: var(--brand-blue); padding: 15px 20px; border-radius: 10px; border: 2px solid #5a9cc5; text-align: center; margin-bottom: 20px;">
+                                    <div style="color: var(--brand-red); font-weight: 600; font-size: 0.95em;">Blake Glover</div>
+                                    <div style="color: white; font-size: 0.75em; margin-top: 3px;">Development</div>
+                                    <div style="color: white; font-size: 0.75em;">Coordinator</div>
+                                </div>
+
+                                <!-- Connector -->
+                                <div style="position: relative; height: 30px;">
+                                    <div style="position: absolute; left: 50%; width: 2px; height: 30px; background: #333; transform: translateX(-50%);"></div>
+                                </div>
+
+                                <!-- Blake's report -->
+                                <div style="background: white; padding: 12px; border: 2px dashed #999; border-radius: 6px; text-align: center;">
+                                    <div style="color: var(--brand-red); font-weight: 600; font-size: 0.8em;">Cindi Youngblood</div>
+                                    <div style="color: #666; font-size: 0.65em;">Community Engagement</div>
+                                    <div style="color: #666; font-size: 0.65em;">Coordinator</div>
+                                </div>
+                            </div>
+
+                            <!-- Rebekah's Department (Right) -->
+                            <div style="flex: 0 0 200px;">
+                                <!-- Rebekah Box -->
+                                <div style="background: var(--brand-blue); padding: 15px 20px; border-radius: 10px; border: 2px solid #5a9cc5; text-align: center; margin-bottom: 20px;">
+                                    <div style="color: var(--brand-red); font-weight: 600; font-size: 0.95em;">Rebekah Estep</div>
+                                    <div style="color: white; font-size: 0.75em; margin-top: 3px;">Marketing and</div>
+                                    <div style="color: white; font-size: 0.75em;">Communications</div>
+                                    <div style="color: white; font-size: 0.75em;">Director</div>
+                                </div>
+
+                                <!-- Connector -->
+                                <div style="position: relative; height: 30px;">
+                                    <div style="position: absolute; left: 50%; width: 2px; height: 15px; background: #333; transform: translateX(-50%);"></div>
+                                    <div style="position: absolute; left: 25%; right: 25%; top: 15px; height: 2px; background: #333;"></div>
+                                    <div style="position: absolute; left: 25%; width: 2px; height: 15px; background: #333; top: 15px;"></div>
+                                    <div style="position: absolute; right: 25%; width: 2px; height: 15px; background: #333; top: 15px;"></div>
+                                </div>
+
+                                <!-- Rebekah's reports -->
+                                <div style="display: flex; gap: 10px;">
+                                    <div style="flex: 1; background: white; padding: 10px; border: 2px dashed #999; border-radius: 6px; text-align: center;">
+                                        <div style="color: var(--brand-red); font-weight: 600; font-size: 0.75em;">Anita Helms</div>
+                                        <div style="color: #666; font-size: 0.65em;">Finance Officer</div>
+                                    </div>
+                                    <div style="flex: 1; background: white; padding: 10px; border: 2px dashed #999; border-radius: 6px; text-align: center;">
+                                        <div style="color: var(--brand-red); font-weight: 600; font-size: 0.75em;">Bethany Chalvet</div>
+                                        <div style="color: #666; font-size: 0.65em;">Executive Assistant</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="key-metrics">
                     <div class="metric-card">
                         <div class="metric-label">Founded</div>
